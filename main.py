@@ -91,7 +91,7 @@ def execute_command(query):
             result = wikipedia.summary(query, sentences=5)
             speak(result)
         except wikipedia.exceptions.DisambiguationError as e:
-            speak("Your query is too vague. Please be more specific.")
+            speak("Disambiguation error please be specific")
             print(f"DisambiguationError: {e}")
     elif 'hello how are you' in query:
         speak('I am fine thank you')
