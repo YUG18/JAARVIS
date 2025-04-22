@@ -38,7 +38,7 @@ def listen_command():
     recognizer = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening....")
-        recognizer.pause_threshold = 1  #It will start processing input if you stopped for 2sec
+        recognizer.pause_threshold = 1  #It will start processing input if you stopped for 1sec
         audio = recognizer.listen(source)
     try:
         print("Recognizing....")
